@@ -24,4 +24,5 @@ class Program
         Console.WriteLine(theFraction.GetDecimalValue());
 
     }
+    
 }
