@@ -21,46 +21,46 @@ class Program
        if (response == 1)
         {
             
-            BreathingActivity bAct = new BreathingActivity("Breathing");
-            bAct.SetDescription("This activity will help you relax by walking you " +
+            BreathingActivity breathing = new BreathingActivity("Breathing");
+            breathing.SetDescription("This activity will help you relax by walking you " +
             "through breathing in and out slowly. Clear your mind and focus on your breathing.");
             Console.Clear();
-            bAct.DisplayStartingMessage();
+            breathing.DisplayStartingMessage();
             int duration = int.Parse(Console.ReadLine());
-            bAct.SetDuration(duration);
+            breathing.SetDuration(duration);
             Console.Clear();
-            bAct.Run();
+            breathing.Run();
            
         }
 
         else if (response == 2)
         {
-            ReflectingActivity rAct = new ReflectingActivity("Reflecting");
-            rAct.SetDescription("This activity will help you reflect on times in your " +
+            ReflectingActivity reflecting = new ReflectingActivity("Reflecting");
+            reflecting.SetDescription("This activity will help you reflect on times in your " +
             "life when you have shown strength and resilience. This will help you " +
             " recognize the power you have and how you can use it in other aspects of your life.");
             Console.Clear();
-            rAct.DisplayStartingMessage();
+            reflecting.DisplayStartingMessage();
             int duration = int.Parse(Console.ReadLine());
-            rAct.SetDuration(duration);
-            rAct.DisplayPrompt();
-            rAct.DisplayQuestion();
-            rAct.Run();
+            reflecting.SetDuration(duration);
+            reflecting.DisplayPrompt();
+            reflecting.DisplayQuestion();
+            reflecting.Run();
 
         }
 
         else if (response == 3)
         {
-            ListingActivity lAct = new ListingActivity("Listing");
-            lAct.SetDescription("This activity will help you reflect on the " +
+            ListingActivity listing = new ListingActivity("Listing");
+            listing.SetDescription("This activity will help you reflect on the " +
             "good things in your life by having you list as many things as " +
             " you can in a certain area.");
             Console.Clear();
-            lAct.DisplayStartingMessage();
+            listing.DisplayStartingMessage();
             int duration = int.Parse(Console.ReadLine());
-            lAct.SetDuration(duration);
+            listing.SetDuration(duration);
             // Console.WriteLine(duration);
-            lAct.Run();
+            listing.Run();
             // lAct.GetListFromUser();
         }
 

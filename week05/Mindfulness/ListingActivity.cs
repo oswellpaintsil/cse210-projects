@@ -52,7 +52,7 @@ public class ListingActivity : Activity
         DateTime endTime = startTime.AddSeconds(duration);
 
         while(DateTime.Now < endTime)
-        // while(true)
+        
         {
             Console.Write("> ");
             string input = Console.ReadLine();

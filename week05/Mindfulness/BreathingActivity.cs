@@ -12,8 +12,8 @@ public class BreathingActivity : Activity
         ShowSpinner(5);
         Console.WriteLine();
         
-        string bIn = "Breathe in...";
-        string bOut = "Now Breathe out...";
+        string breatheIn = "Breathe in...";
+        string breatheOut = "Now Breathe out...";
 
         int duration = GetDuration();
 
@@ -22,10 +22,10 @@ public class BreathingActivity : Activity
 
         while(DateTime.Now < endTime)
         {
-            Console.Write(bIn);
+            Console.Write(breatheIn);
             ShowCountDown(3);
             Console.WriteLine();
-            Console.Write(bOut);
+            Console.Write(breatheOut);
             ShowCountDown(4);
             Console.WriteLine();
             Console.WriteLine();
